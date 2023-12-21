@@ -9,9 +9,7 @@ module Bp3
     mattr_writer :site_class_name
 
     def self.site_class
-      puts 'Bp3'.constantize
-      @@site_class ||= @@site_class_name.constantize
+      @@site_class ||= @@site_class_name.constantize # rubocop:disable Style/ClassVars
     end
   end
 end
-

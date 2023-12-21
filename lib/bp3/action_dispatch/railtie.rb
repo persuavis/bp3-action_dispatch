@@ -8,7 +8,7 @@ module Bp3
       class ActionDispatchRailtie < Rails::Railtie
         initializer 'bp3-action_dispatch.register' do |app|
           app.config.after_initialize do
-            ::ActionDispatch::Request.send :include, Bp3::ActionDispatch::Includer
+            ::ActionDispatch::Request.include Bp3::ActionDispatch::Includer
           end
         end
       end

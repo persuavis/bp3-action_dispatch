@@ -3,8 +3,8 @@
 require 'bp3-action_dispatch'
 
 RSpec.describe Bp3::ActionDispatch do
-  it "has a version number" do
-    expect(Bp3::ActionDispatch::VERSION).not_to be nil
+  it 'has a version number' do
+    expect(Bp3::ActionDispatch::VERSION).not_to be_nil
   end
 
   describe 'config' do

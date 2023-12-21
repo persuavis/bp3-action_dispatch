@@ -1,3 +1,3 @@
 # frozen_string_literal: true
 
-require "bp3/action_dispatch"
+require 'bp3/action_dispatch'

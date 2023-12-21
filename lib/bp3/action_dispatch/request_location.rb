@@ -41,6 +41,7 @@ module RequestLocale
     locale
   end
 
+  # rubocop:disable Metrics/AbcSize
   def extract_locale_from_header
     header = env['HTTP_ACCEPT_LANGUAGE']
     return if header.blank?
@@ -54,6 +55,7 @@ module RequestLocale
     @locale_from = 'header' if locale
     locale
   end
+  # rubocop:enable Metrics/AbcSize
 
   def extract_locale_from_setting
     return if request_site&.config.nil?

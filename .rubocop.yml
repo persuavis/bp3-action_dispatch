@@ -11,6 +11,9 @@ AllCops:
 Gemspec/DevelopmentDependencies:
   EnforcedStyle: gemspec
 
-#Naming/FileName:
-#  Exclude:
-#    - lib/bp3-action_dispatch.rb
+Naming/FileName:
+  Exclude:
+    - lib/bp3-action_dispatch.rb
+
+Style/Documentation:
+  Enabled: false
