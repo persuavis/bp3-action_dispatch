@@ -1,14 +1,19 @@
 # frozen_string_literal: true
 
-require 'bp3/action_dispatch/includer'
-
 module Bp3
   module ActionDispatch
     if defined?(Rails.env)
-      class ActionDispatchRailtie < Rails::Railtie
-        initializer 'bp3-action_dispatch.register' do |app|
+      class Railtie < Rails::Railtie
+        initializer 'bp3.action_dispatch.railtie.register' do |app|
           app.config.after_initialize do
-            ::ActionDispatch::Request.include Bp3::ActionDispatch::Includer
+            ::ActionDispatch::Request # preload
+            module ::ActionDispatch
+              class Request
+                include Bp3::ActionDispatch::RequestHost
+                include Bp3::ActionDispatch::RequestSite
+                include Bp3::ActionDispatch::RequestLocale
+              end
+            end
           end
         end
       end

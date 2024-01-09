@@ -35,6 +35,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'activesupport', ['>= 7.1.2', '< 8']
   spec.add_dependency 'i18n', ['>= 1.8.11', '< 2']
 
+  spec.add_development_dependency 'byebug'
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 1.21'
