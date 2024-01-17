@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'bp3/action_dispatch/railtie'
 require 'active_support/core_ext/module/attribute_accessors'
 require 'active_support/inflector'
 
