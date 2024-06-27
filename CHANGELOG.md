@@ -1,5 +1,10 @@
 ## [Unreleased]
 
+## [0.1.2] - 2024-06-27
+
+- Undo making site_class configurable, as it causes problems with
+  class reloading
+
 ## [0.1.1] - 2024-05-30
 
 - Tweaks and documentation
