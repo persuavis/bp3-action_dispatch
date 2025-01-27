@@ -1,5 +1,11 @@
 ## [Unreleased]
 
+## [0.1.4] - 2025-01-27
+
+- Increase robustness of path parsing
+  - handle cases with '//' in the path (blank path segments)
+  - return default locale as fallback
+
 ## [0.1.3] - 2024-11-18
 
 - Use ruby 3.3.5 and relax gem constraints
