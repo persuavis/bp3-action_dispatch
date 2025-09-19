@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.1.5] - 2025-09-19
+
+- Update ruby version to 3.4.6
+
 ## [0.1.4] - 2025-01-27
 
 - Increase robustness of path parsing
