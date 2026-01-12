@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bp3-action_dispatch (0.1.5)
+    bp3-action_dispatch (0.1.6)
       actionpack (~> 8.1)
       activesupport (~> 8.1)
       i18n (>= 1.8.11)

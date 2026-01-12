@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.1.6] - 2026-01-12
+
+- Update gems
+
 ## [0.1.5] - 2025-09-19
 
 - Update ruby version to 3.4.6
