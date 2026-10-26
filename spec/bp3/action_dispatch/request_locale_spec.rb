@@ -3,7 +3,7 @@
 require 'rspec'
 require 'byebug'
 
-# rubocop:disable Lint/ConstantDefinitionInBlock, RSpec/LeakyConstantDeclaration
+# rubocop:disable-next Lint/ConstantDefinitionInBlock, RSpec/LeakyConstantDeclaration
 RSpec.describe 'Bp3::ActionDispatch::RequestLocale' do
   module Bp3
     module ActionDispatch
@@ -110,4 +110,3 @@ RSpec.describe 'Bp3::ActionDispatch::RequestLocale' do
     end
   end
 end
-# rubocop:enable Lint/ConstantDefinitionInBlock, RSpec/LeakyConstantDeclaration
