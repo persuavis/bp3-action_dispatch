@@ -26,10 +26,7 @@ includes three modules. The Railtie is only defined when `Rails.env` is, so the 
 without Rails.
 
 **RequestHost** (`request_host.rb`)
-- `normalized_host`: the request's `host` unless it is blank or an IP address, then the forwarded host,
-  then `host` anyway
-
-**RequestSite** (`request_site.rb`)
+- `normalized_host`: the request's `host`, which Rails reads from `X-Forwarded-Host` when it is there.
 - `request_site`: `Sites::Site.find_host(normalized_host)`, memoized. Depends on RequestHost. It names
   `Sites::Site` directly rather than going through `site_class`
 

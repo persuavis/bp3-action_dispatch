@@ -1,5 +1,8 @@
 ## [Unreleased]
 
+- `normalized_host` is `host`: its forwarded branch read a key Rack does not set, and `host` honors the
+  header already
+
 ## [0.1.6] - 2026-01-12
 
 - Update gems
