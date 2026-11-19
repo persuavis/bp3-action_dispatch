@@ -14,7 +14,7 @@ module Bp3
     mattr_accessor :site_class_name
 
     def self.site_class
-      @@site_class ||= site_class_name.constantize # rubocop:disable Style/ClassVars
+      site_class_name.constantize
     end
   end
 end
