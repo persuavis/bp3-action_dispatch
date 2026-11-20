@@ -1,7 +1,13 @@
 ## [Unreleased]
 
-- `normalized_host` is `host`: its forwarded branch read a key Rack does not set, and `host` honors the
-  header already
+## [0.2.0] - 2026-11-20
+
+- Require Ruby 4.0.10 and update Bundler to 4.1.0
+- Remove site_class memoization
+- Gitignore .ruby-version
+- Simplify normalized_host to host
+- Update gems
+- Add CLAUDE.md file
 
 ## [0.1.6] - 2026-01-12
 
